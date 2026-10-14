@@ -1,0 +1,236 @@
+{
+ "title": "VARS Prospective Member Profile",
+ "source_url": "https://forms.gle/FnZu9H9wvF6LaMSW8",
+ "items": [
+  {
+   "label": "Name (Last, First)",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Address, City, State, Zip",
+   "type": "paragraph",
+   "required": true
+  },
+  {
+   "label": "Phone #",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "About You",
+   "type": "section_header"
+  },
+  {
+   "label": "What is your primary reason for wanting to joinin a flying club?",
+   "type": "paragraph",
+   "required": false
+  },
+  {
+   "label": "Year you obtained certificate",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Type of certificate",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Date of last Medical issued",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Date of last Flight Review completed",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Select advanced ratings you may have achieved",
+   "type": "checkboxes",
+   "required": false,
+   "options": [
+    "Instrument",
+    "Commercial",
+    "CFI",
+    "CFII",
+    "Multi-Engine",
+    "High Perfomance endorsement",
+    "Complex endorsement",
+    "Tail wheel endorsement",
+    "A&P",
+    ""
+   ]
+  },
+  {
+   "label": "Total Hours",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Hours past 12 months",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Total night time hours",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Total cross country hours",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Do you have mountain flying experience?",
+   "type": "multiple_choice",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "label": "Have you ever failed a checkride for any certificate or rating?",
+   "type": "multiple_choice",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "label": "If Yes, how many times?",
+   "type": "short_answer",
+   "required": false
+  },
+  {
+   "label": "Have you ever had your pilot or medical certificate revoked or suspended?",
+   "type": "multiple_choice",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "label": "If Yes, briefly explain",
+   "type": "paragraph",
+   "required": false
+  },
+  {
+   "label": "Occupation",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Previous Club Affiliations",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Current member of any of the following:",
+   "type": "checkboxes",
+   "required": false,
+   "options": [
+    "AOPA",
+    "EAA",
+    "AZ Pilots Association",
+    null
+   ]
+  },
+  {
+   "label": "Types of Aircraft Flown",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Have you ever owned an aircraft (whole or partial ownership)?",
+   "type": "multiple_choice",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "label": "If Yes, Please tell us about it",
+   "type": "paragraph",
+   "required": false
+  },
+  {
+   "label": "About the Club",
+   "type": "section_header"
+  },
+  {
+   "label": "Will you be using the aircraft for occasional business?",
+   "type": "multiple_choice",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "label": "If Yes, approximately how many hours per month?",
+   "type": "short_answer",
+   "required": false
+  },
+  {
+   "label": "Do you plan to or want to fly the plane to Mexico?",
+   "type": "multiple_choice",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "label": "How many hours per month do you anticipate using the aircraft?",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "When do you plan on using the plane the most?",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Will you want to take the plane for overnight trips?   If so, how often?",
+   "type": "short_answer",
+   "required": true
+  },
+  {
+   "label": "Will you be available to help participate with occasional aircraft maintenance, washing of the plane, and hangar cleaning?",
+   "type": "multiple_choice",
+   "required": true,
+   "options": [
+    "Yes",
+    "No",
+    null
+   ]
+  },
+  {
+   "label": "Will you be able to commit to attending monthly meetings once a month?",
+   "type": "multiple_choice",
+   "required": true,
+   "options": [
+    "Yes",
+    "No",
+    null
+   ]
+  },
+  {
+   "label": "We occassionally upgrade or require occasional out of pocket assessment from the members. How do you feel about contributing once in a while for upgrades or required assessments to the aircraft?",
+   "type": "paragraph",
+   "required": true
+  },
+  {
+   "label": "Comments?",
+   "type": "paragraph",
+   "required": false
+  }
+ ]
+}
