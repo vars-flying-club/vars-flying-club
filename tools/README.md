@@ -4,6 +4,13 @@
 root is plain HTML; open it, change the words, commit. This folder exists so the
 club keeps the machinery, not just the output.
 
+> **Warning — `build_site.py` overwrites the pages it generates.**
+> The `.html` files in the repository root are now the source of truth, and
+> they contain hand edits made since they were generated. Running
+> `build_site.py` would wipe those. Before running it, copy any hand edits
+> back into the script. For ordinary text changes, edit the HTML directly and
+> leave this folder alone.
+
 ## What's here
 
 | File | What it does |

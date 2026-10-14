@@ -23,9 +23,40 @@ images/history/    History page archival images
 
 ## Editing
 
-Open any `.html` file in a text editor. The navigation appears at the top of
-every page — if you add or rename a page, the nav list has to be updated in
-every file.
+Open any `.html` file in a text editor — or edit it straight in GitHub, which
+is easier and needs nothing installed. See "Editing on GitHub" below.
+
+The navigation appears at the top of every page — if you add or rename a page,
+the nav list has to be updated in every file.
+
+> **The `.html` files are the source of truth.** `tools/build_site.py` generated
+> them originally and would **overwrite any hand edits** if it were run again.
+> Don't run it for ordinary text changes. It is kept for bulk work — restyling
+> every page at once, or regenerating the photo galleries — and whoever runs it
+> must first copy any hand edits back into the script.
+
+## Editing on GitHub
+
+No software, no git, no command line.
+
+1. Go to <https://github.com/vars-flying-club/vars-flying-club>
+2. Click the file you want — `join.html`, `about.html`, and so on
+3. Click the **pencil** icon, top right of the file
+4. Change the words
+5. Scroll down, write a line saying what you changed, click **Commit changes**
+
+The live site updates about a minute later. Hard-refresh if you still see the
+old version.
+
+**What is safe to change:** the words between the tags. In
+`<p>We meet monthly.</p>` you can rewrite *We meet monthly* freely.
+
+**What to leave alone:** anything inside angle brackets, and the hidden fields
+in `contact.html` and `apply.html` that start with `access_key` or `redirect` —
+those are what make the forms deliver.
+
+**If you break something:** nothing is lost. Open the **Commits** tab, find your
+change, and revert it. Every version is kept forever.
 
 ## Preview locally
 
