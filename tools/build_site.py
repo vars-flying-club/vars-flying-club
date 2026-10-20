@@ -380,8 +380,8 @@ page("photographs.html", "Photographs | VARS Flying Club",
      + gallery(air)
      + "\n\n"
      + shelf("The rest of the archive",
-             f"Every other photograph carried over from the old site &mdash; "
-             f"{len(rest)} in all, members, flights and trips over the years.")
+             f"{len(rest)} more photographs &mdash; members, flights and trips "
+             f"over the years.")
      + "\n\n"
      + gallery(rest, dense=True), wide=True)
 
