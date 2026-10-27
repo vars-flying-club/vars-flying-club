@@ -298,7 +298,8 @@ page("join.html", "Join | VARS Flying Club",
     <li><strong>$100 per month dues</strong> &mdash; paid quarterly, $300 every three
       months (these cover our fixed costs: insurance, the hangar, registration and
       expected annual charges)</li>
-    <li><strong>$60 per hour, dry</strong> &mdash; on tach time</li>
+    <li><strong>$60 per hour, dry</strong> &mdash; on tach time (this goes towards
+      maintenance expenses and engine reserves)</li>
     <li><strong>Payment</strong> &mdash; by Zelle only</li>
   </ul>
 
@@ -443,7 +444,8 @@ page("for-members.html", "For Members | VARS Flying Club",
     <div class="row">
       <span class="row__label">Hourly rate</span>
       <span class="row__value">$60 per hour, dry</span>
-      <span class="row__note">Charged on tach time. Members fuel the aircraft after use.</span>
+      <span class="row__note">Charged on tach time, and goes towards maintenance
+        expenses and engine reserves. Members fuel the aircraft after use.</span>
     </div>
   </div>
 
