@@ -295,8 +295,8 @@ page("join.html", "Join | VARS Flying Club",
     <!-- Refund terms parked 2026-09-24 — exact wording is in DECISIONS.md,
          to be restored verbatim. -->
     <li><strong>$2,000 to join</strong></li>
-    <li><strong>$100 per month dues</strong> &mdash; paid quarterly, $300 every three
-      months (these cover our fixed costs: insurance to cover our member pilots,
+    <li><strong>$100 per month dues</strong> &mdash; paid quarterly in advance, $300
+      every three months (these cover our fixed costs: insurance to cover our member pilots,
       the hangar, registration and expected annual charges)</li>
     <li><strong>$60 per hour, dry</strong> &mdash; on tach time (this goes towards
       maintenance expenses and engine reserves)</li>
@@ -434,14 +434,11 @@ page("for-members.html", "For Members | VARS Flying Club",
       <span class="row__value">$2,000 one-time</span>
     </div>
     <div class="row">
-      <span class="row__label">Dues &mdash; monthly</span>
+      <span class="row__label">Dues</span>
       <span class="row__value">$100 per month</span>
-      <span class="row__note">Covers our fixed costs: insurance to cover our member
-        pilots, the hangar, registration and expected annual charges.</span>
-    </div>
-    <div class="row">
-      <span class="row__label">Dues &mdash; quarterly</span>
-      <span class="row__value">$300 every three months</span>
+      <span class="row__note">Paid quarterly in advance &mdash; $300 every three months.
+        Covers our fixed costs: insurance to cover our member pilots, the hangar,
+        registration and expected annual charges.</span>
     </div>
     <div class="row">
       <span class="row__label">Hourly rate</span>
