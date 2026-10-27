@@ -289,7 +289,7 @@ page("join.html", "Join | VARS Flying Club",
   <h2>Membership</h2>
 
   <ul class="facts">
-    <li><strong>$100 join fee</strong> &mdash; non-refundable (it goes towards updating
+    <li><strong>$100 processing fee</strong> &mdash; non-refundable (it goes towards updating
       our Arizona Corporation Commission documentation and paying for a new Falcon Field
       gate key)</li>
     <!-- Refund terms parked 2026-09-24 — exact wording is in DECISIONS.md,
@@ -420,7 +420,7 @@ page("for-members.html", "For Members | VARS Flying Club",
 
   <div class="rows">
     <div class="row">
-      <span class="row__label">Join fee</span>
+      <span class="row__label">Processing fee</span>
       <span class="row__value">$100 one-time</span>
       <span class="row__note">Non-refundable (it goes towards updating our Arizona
         Corporation Commission documentation and paying for a new Falcon Field gate
