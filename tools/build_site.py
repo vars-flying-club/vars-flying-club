@@ -25,7 +25,48 @@ def nav(active):
     return "\n".join(out)
 
 
+SITE = "https://varsflyingclub.com"
+
+# Pages that should not appear in search results.
+NOINDEX = {"thanks.html", "applied.html"}
+
+JSONLD = """
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsClub",
+  "name": "Valley Aircraft Restoration Society",
+  "alternateName": "VARS Flying Club",
+  "url": "https://varsflyingclub.com/",
+  "image": "https://varsflyingclub.com/images/hero.jpg",
+  "description": "A flying club at Falcon Field (KFFZ) in Mesa, Arizona, sharing a four-seat IFR-equipped Piper Cherokee 235F.",
+  "foundingDate": "1989-05",
+  "sport": "Aviation",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mesa",
+    "addressRegion": "AZ",
+    "addressCountry": "US"
+  },
+  "location": {
+    "@type": "Place",
+    "name": "Falcon Field Airport (KFFZ)",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mesa",
+      "addressRegion": "AZ",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>"""
+
+
 def page(fname, title, desc, hero, body, wide=False):
+    canonical = f"{SITE}/" if fname == "index.html" else f"{SITE}/{fname}"
+    robots = ('\n<meta name="robots" content="noindex, follow">'
+              if fname in NOINDEX else "")
+    jsonld = JSONLD if fname == "index.html" else ""
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +77,14 @@ def page(fname, title, desc, hero, body, wide=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap">
+<link rel="canonical" href="{canonical}">{robots}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VARS Flying Club">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{canonical}">
+<meta property="og:image" content="https://varsflyingclub.com/images/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">{jsonld}
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -118,7 +167,7 @@ rest = [r['code'] for r in MANIFEST                             # everything els
 
 # ------------------------------------------------------------------ Home
 page("index.html",
-     "VARS | Valley Aircraft Restoration Society",
+     "VARS Flying Club — Falcon Field, Mesa, Arizona",
      "The Valley Aircraft Restoration Society — a flying club with a 1972 "
      "Piper Cherokee 235F based at Falcon Field (KFFZ) in Mesa, Arizona.",
      '<section class="hero hero--home">\n'
@@ -160,7 +209,7 @@ page("index.html",
 """)
 
 # ------------------------------------------------------------------ About
-page("about.html", "About | VARS Flying Club",
+page("about.html", "About the Club — VARS Flying Club, Mesa AZ",
      "About the Valley Aircraft Restoration Society flying club at Falcon Field, Mesa, Arizona.",
      banner("About Us"),
      f"""
@@ -252,7 +301,7 @@ page("about.html", "About | VARS Flying Club",
 """)
 
 # ------------------------------------------------------------------ Join
-page("join.html", "Join | VARS Flying Club",
+page("join.html", "Membership & Rates — VARS Flying Club, Mesa AZ",
      "Membership costs, requirements and application for the Valley Aircraft Restoration "
      "Society flying club at Falcon Field, Mesa, Arizona.",
      banner("Interested in Joining?"),
@@ -322,7 +371,7 @@ page("join.html", "Join | VARS Flying Club",
 """)
 
 # ------------------------------------------------------------------ History
-page("history.html", "History | VARS Flying Club",
+page("history.html", "Club History since 1989 — VARS Flying Club",
      "The story of the Valley Aircraft Restoration Society, from helicopter restoration "
      "in 1989 to a flying club at Falcon Field, Mesa, Arizona.",
      banner("History", "The V.A.R.S. Story"),
@@ -379,7 +428,7 @@ page("history.html", "History | VARS Flying Club",
 """ + gallery(hist, dense=True), wide=True)
 
 # ------------------------------------------------------------------ Photographs
-page("photographs.html", "Photographs | VARS Flying Club",
+page("photographs.html", "Photographs — VARS Flying Club, Mesa AZ",
      "Photographs of the VARS Piper Cherokee 235F, members, flights and trips.",
      banner("Photographs", "Members, Flights &amp; Trips"),
      "  <p>Click any photograph to see it full size.</p>\n\n"
@@ -396,7 +445,7 @@ VIDEOS = [("258317258", "Verde River Flight from Payson to Falcon Field"),
           ("40690971",  "Club flying"),
           ("40689093",  "Club flying")]
 
-page("video.html", "Video | VARS Flying Club",
+page("video.html", "Video — VARS Flying Club, Mesa AZ",
      "Video from the Valley Aircraft Restoration Society flying club at Falcon Field, "
      "Mesa, Arizona.",
      banner("Video"),
@@ -412,7 +461,7 @@ page("video.html", "Video | VARS Flying Club",
          f'  </figure>' for vid, title in VIDEOS))
 
 # ------------------------------------------------------------------ For Members
-page("for-members.html", "For Members | VARS Flying Club",
+page("for-members.html", "For Members — VARS Flying Club",
      "Reservations and dues for members of the Valley Aircraft Restoration Society.",
      banner("For Members"),
      f"""
@@ -462,7 +511,7 @@ page("for-members.html", "For Members | VARS Flying Club",
 """)
 
 # ------------------------------------------------------------------ Contact
-page("contact.html", "Contact | VARS Flying Club",
+page("contact.html", "Contact — VARS Flying Club, Falcon Field, Mesa AZ",
      "Get in touch with the Valley Aircraft Restoration Society flying club at Falcon "
      "Field, Mesa, Arizona.",
      banner("Contact Us"),
@@ -529,7 +578,7 @@ page("contact.html", "Contact | VARS Flying Club",
 """)
 
 # ------------------------------------------------------------------ Thanks
-page("thanks.html", "Thank you | VARS Flying Club",
+page("thanks.html", "Thank You — VARS Flying Club",
      "Your message to the Valley Aircraft Restoration Society has been sent.",
      banner("Thank You"),
      """
@@ -610,7 +659,7 @@ for g in groups:
     blocks.append(f'    <fieldset>\n      <legend>{g["title"]}</legend>\n'
                   + "\n".join(rendered) + '\n    </fieldset>')
 
-page("apply.html", "Apply | VARS Flying Club",
+page("apply.html", "Membership Application — VARS Flying Club",
      "Membership application for the Valley Aircraft Restoration Society flying club at "
      "Falcon Field, Mesa, Arizona.",
      banner("Membership Application"),
@@ -649,7 +698,7 @@ page("apply.html", "Apply | VARS Flying Club",
 """)
 
 # ------------------------------------------------------------------ Applied
-page("applied.html", "Application received | VARS Flying Club",
+page("applied.html", "Application Received — VARS Flying Club",
      "Your membership application to the Valley Aircraft Restoration Society has been sent.",
      banner("Application Received"),
      """
