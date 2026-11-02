@@ -271,7 +271,7 @@ page("join.html", "Join | VARS Flying Club",
     <li>A small club with a family feel</li>
     <li>Our plane is kept in a hangar</li>
     <li>While we only have one plane, the airplane&rsquo;s utilization is very, very low,
-      making it easy to schedule a trip</li>
+      making it easy to schedule a flight</li>
     <li>Our hourly fee is by far
       <a href="https://arizonaflyingclubs.com/traditional.html?sort=hourly"
          target="_blank" rel="noopener">the lowest for a high-performance airplane in
