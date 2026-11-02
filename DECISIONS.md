@@ -52,6 +52,22 @@ read:
 Also recoverable from git: the last commit containing both is `9afff35`
 (`git show 9afff35:join.html`).
 
+## Search visibility
+
+Set up 2026-11-02. Titles lead with "flying club", "Mesa" and "Falcon Field"
+rather than the club's initials. `sitemap.xml` (9 pages) and `robots.txt` are
+in the repo root; `/old/` is excluded from both. Canonical URLs, Open Graph and
+Twitter cards on every page; `SportsClub` structured data on the home page.
+The thank-you pages are `noindex`.
+
+**Google Search Console** — verified by DNS TXT on the apex
+(`google-site-verification=euc_4eQvN84_…`, alongside the SPF record — don't
+delete either). Sitemap submitted 2026-11-02. Check the Performance tab in a
+few weeks to see which searches actually bring people in.
+
+The favicon (`favicon.ico` + three PNGs) is a placeholder: a brass V on the
+site's ink ground. Replace all four files if the club gets a real mark.
+
 ## Open flags — revisit before go-live
 
 **Contact form delivers to Ted's personal address, not a club one.** The
