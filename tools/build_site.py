@@ -326,14 +326,14 @@ page("join.html", "Membership & Rates — VARS Flying Club, Mesa AZ",
     <li>While we only have one plane, the airplane&rsquo;s utilization is very, very low,
       making it easy to schedule a flight</li>
     <li>Our hourly fee is by far
-      <a href="https://arizonaflyingclubs.com/traditional.html?sort=hourly"
+      <a href="https://arizonaflyingclubs.com/traditional.html?filter=high-performance&amp;sort=hourly"
          target="_blank" rel="noopener">the lowest for a high-performance airplane in
          Arizona</a>, and it is a tach rate, not Hobbs</li>
     <li>The airplane is one of the most capable club airplanes in the state in many ways
       &mdash; a very high useful load, excellent high-density-altitude performance, and
       135 knots cruise at 11 to 12 gallons per hour</li>
     <li>Our monthly dues are
-      <a href="https://arizonaflyingclubs.com/traditional.html?sort=dues"
+      <a href="https://arizonaflyingclubs.com/traditional.html?filter=high-performance&amp;sort=dues"
          target="_blank" rel="noopener">much lower than most other Phoenix area
          clubs</a></li>
     <li>Online scheduling and 24-hour access</li>
