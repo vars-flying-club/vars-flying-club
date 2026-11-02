@@ -279,7 +279,10 @@ page("join.html", "Join | VARS Flying Club",
     <li>The airplane is one of the most capable club airplanes in the state in many ways
       &mdash; a very high useful load, excellent high-density-altitude performance, and
       135 knots cruise at 11 to 12 gallons per hour</li>
-    <li>Our monthly dues are about half the cost of other clubs</li>
+    <li>Our monthly dues are
+      <a href="https://arizonaflyingclubs.com/traditional.html?sort=dues"
+         target="_blank" rel="noopener">much lower than other Phoenix area
+         clubs</a></li>
     <li>Online scheduling and 24-hour access</li>
   </ul>
 
