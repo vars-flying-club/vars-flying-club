@@ -472,3 +472,13 @@ p { margin: 0 0 18px; }
 
 .form--long button { margin-top: 6px; }
 
+
+/* A gallery photograph that carries a caption. Most do not; this keeps the
+   grid rows even by letting the caption sit under the image without
+   stretching the tile. */
+.gallery figure.captioned figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}

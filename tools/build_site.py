@@ -127,6 +127,13 @@ def banner(h1, sub=None):
             f'    <h1 class="wordmark">{h1}</h1>{s}\n  </div>\n</section>')
 
 
+# Captions shown under a gallery photograph. Most have none; a figure listed
+# here gets class="captioned" and the text below the image.
+CAPTIONS = {
+    "supply-run": "Navajo Airlift 2026 &mdash; 400 pounds of charitable items "
+                  "delivered to the Navajo Nation.",
+}
+
 # Alt text for the photographs we can actually describe. Anything not listed falls
 # back to a numbered label, so every gallery link still has an accessible name
 # — a link wrapping an image with empty alt text is a link with no name at all.
@@ -145,12 +152,14 @@ def gallery(codes, dense=False, base=""):
     items = []
     for i, c in enumerate(codes, 1):
         alt = ALT.get(c, f"Photograph {i} of {len(codes)}")
+        cap = CAPTIONS.get(c)
         items.append(
-            f'    <figure>\n'
+            f'    <figure{" class=\"captioned\"" if cap else ""}>\n'
             f'      <a href="{base}images/photos/{c}.jpg" target="_blank" rel="noopener">\n'
             f'        <img src="{base}images/photos/thumb/{c}.jpg" alt="{alt}" loading="lazy">\n'
             f'      </a>\n'
-            f'    </figure>')
+            + (f'      <figcaption>{cap}</figcaption>\n' if cap else '')
+            + f'    </figure>')
     return f'  <div class="{cls}">\n' + "\n".join(items) + '\n  </div>'
 
 
