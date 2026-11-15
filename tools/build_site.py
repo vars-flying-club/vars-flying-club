@@ -131,6 +131,7 @@ def banner(h1, sub=None):
 # back to a numbered label, so every gallery link still has an accessible name
 # — a link wrapping an image with empty alt text is a link with no name at all.
 ALT = {
+    "supply-run": "The Navajo Airlift 2026 — two club members on the ramp beside the aircraft with 400 pounds of food bank boxes, bedding and supplies bound for the Navajo Nation",
     "radio-stack": "The radio stack — PS Engineering audio panel, Garmin GNS 530 and "
                    "the number two comm radio",
 }
@@ -270,17 +271,6 @@ page("about.html", "About the Club — VARS Flying Club, Mesa AZ",
 
   <div class="giving">
     <h3>Giving back</h3>
-
-    <figure class="giving__photo">
-      <a href="images/photos/supply-run.jpg" target="_blank" rel="noopener">
-        <img src="images/photos/supply-run.jpg"
-             alt="Two club members on the ramp beside the aircraft with 400 pounds of
-                  food bank boxes, bedding and supplies bound for the Navajo Nation"
-             loading="lazy">
-      </a>
-      <figcaption>Navajo Airlift 2026 &mdash; 400 pounds of charitable items
-        delivered to the Navajo Nation.</figcaption>
-    </figure>
 
     <p>We periodically give back to the community by sponsoring functions that introduce
     aviation to youngsters, including local Boy and Girl Scout troops and underprivileged
