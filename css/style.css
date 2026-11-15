@@ -471,3 +471,17 @@ p { margin: 0 0 18px; }
 .choice input { margin: 0; }
 
 .form--long button { margin-top: 6px; }
+
+/* Photo inside the giving-back block. */
+.giving__photo { margin: 0 0 18px; }
+.giving__photo a { display: block; border-bottom: none; }
+.giving__photo img {
+  width: 100%;
+  border: 1px solid #e9b271;
+  background: #fff;
+}
+.giving__photo figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #8a4408;
+}

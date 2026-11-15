@@ -271,6 +271,16 @@ page("about.html", "About the Club — VARS Flying Club, Mesa AZ",
   <div class="giving">
     <h3>Giving back</h3>
 
+    <figure class="giving__photo">
+      <a href="images/photos/supply-run.jpg" target="_blank" rel="noopener">
+        <img src="images/photos/supply-run.jpg"
+             alt="Two club members on the ramp beside the aircraft, with food bank
+                  boxes, bedding and supplies loaded for a relief flight"
+             loading="lazy">
+      </a>
+      <figcaption>A load going out &mdash; food bank supplies and bedding.</figcaption>
+    </figure>
+
     <p>We periodically give back to the community by sponsoring functions that introduce
     aviation to youngsters, including local Boy and Girl Scout troops and underprivileged
     children.</p>
