@@ -274,11 +274,12 @@ page("about.html", "About the Club — VARS Flying Club, Mesa AZ",
     <figure class="giving__photo">
       <a href="images/photos/supply-run.jpg" target="_blank" rel="noopener">
         <img src="images/photos/supply-run.jpg"
-             alt="Two club members on the ramp beside the aircraft, with food bank
-                  boxes, bedding and supplies loaded for a relief flight"
+             alt="Two club members on the ramp beside the aircraft with 400 pounds of
+                  food bank boxes, bedding and supplies bound for the Navajo Nation"
              loading="lazy">
       </a>
-      <figcaption>A load going out &mdash; food bank supplies and bedding.</figcaption>
+      <figcaption>Navajo Airlift 2026 &mdash; 400 pounds of charitable items
+        delivered to the Navajo Nation.</figcaption>
     </figure>
 
     <p>We periodically give back to the community by sponsoring functions that introduce
